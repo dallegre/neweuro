@@ -13902,14 +13902,14 @@ high speed (Philips)</description>
 <wire x1="38.1" y1="81.28" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="91.44" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
 <junction x="38.1" y="91.44"/>
-<wire x1="38.1" y1="96.52" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<junction x="38.1" y="96.52"/>
-<pinref part="IC2" gate="B" pin="+IN"/>
+<wire x1="38.1" y1="91.44" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G1" pin="C"/>
 <pinref part="Q4" gate="G1" pin="E"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+<wire x1="38.1" y1="116.84" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
+<junction x="38.1" y="116.84"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -13939,14 +13939,14 @@ high speed (Philips)</description>
 <wire x1="50.8" y1="81.28" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="91.44" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="91.44" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
 <junction x="50.8" y="91.44"/>
-<wire x1="50.8" y1="116.84" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<junction x="50.8" y="116.84"/>
-<pinref part="IC2" gate="A" pin="+IN"/>
 <pinref part="Q2" gate="G1" pin="C"/>
 <pinref part="Q3" gate="G1" pin="E"/>
+<pinref part="IC2" gate="B" pin="+IN"/>
+<wire x1="50.8" y1="96.52" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<junction x="50.8" y="96.52"/>
 </segment>
 </net>
 <net name="N$7" class="0">
