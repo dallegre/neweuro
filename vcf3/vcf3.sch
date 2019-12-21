@@ -13584,9 +13584,9 @@ high speed (Philips)</description>
 <part name="GND5" library="dan" deviceset="GND" device=""/>
 <part name="R16" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
 <part name="Q" library="dan" deviceset="US-EVU" device="F2J" value="10K"/>
-<part name="R18" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
-<part name="R19" library="dan" deviceset="R-US_" device="0207/2V" value="22k"/>
-<part name="R20" library="dan" deviceset="R-US_" device="0207/2V" value="22k"/>
+<part name="R18" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
+<part name="R19" library="dan" deviceset="R-US_" device="0207/2V" value="47k"/>
+<part name="R20" library="dan" deviceset="R-US_" device="0207/2V" value="47k"/>
 <part name="GND6" library="dan" deviceset="GND" device=""/>
 <part name="GAIN" library="dan" deviceset="US-EVU" device="F2J" value="10K"/>
 <part name="AIN" library="dan" deviceset="PJ301BM" device=""/>

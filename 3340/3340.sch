@@ -13425,7 +13425,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <part name="C12" library="dan" deviceset="C-US" device="050-025X075" value="1u"/>
 <part name="PWM" library="dan" deviceset="PJ301BM" device=""/>
 <part name="GND4" library="dan" deviceset="GND" device=""/>
-<part name="R8" library="dan" deviceset="R-US_" device="0207/7" value="22k"/>
+<part name="R8" library="dan" deviceset="R-US_" device="0207/7" value="1k"/>
 <part name="GND20" library="dan" deviceset="GND" device=""/>
 <part name="GND21" library="dan" deviceset="GND" device=""/>
 <part name="X1" library="dan" deviceset="2516-" device=""/>
@@ -13452,7 +13452,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <part name="GND3" library="dan" deviceset="GND" device=""/>
 <part name="C1" library="dan" deviceset="C-US" device="050-025X075" value="1n"/>
 <part name="GND5" library="dan" deviceset="GND" device=""/>
-<part name="R7" library="dan" deviceset="R-US_" device="0207/7" value="22k"/>
+<part name="R7" library="dan" deviceset="R-US_" device="0207/7" value="1k"/>
 <part name="HF" library="dan" deviceset="TRIM_US-" device="S64W" value="20k"/>
 <part name="GND11" library="dan" deviceset="GND" device=""/>
 <part name="R12" library="dan" deviceset="R-US_" device="0207/2V" value="500k"/>
@@ -13484,7 +13484,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <part name="P+10" library="dan" deviceset="+12V" device=""/>
 <part name="SYNC" library="dan" deviceset="PJ301BM" device=""/>
 <part name="GND6" library="dan" deviceset="GND" device=""/>
-<part name="C6" library="dan" deviceset="C-US" device="050-025X075" value="1n"/>
+<part name="C6" library="dan" deviceset="C-US" device="050-025X075" value="68p"/>
 <part name="GND9" library="dan" deviceset="GND" device=""/>
 <part name="P+4" library="dan" deviceset="+12V" device=""/>
 <part name="P-4" library="dan" deviceset="-12V" device=""/>
@@ -13509,8 +13509,8 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <part name="R28" library="dan" deviceset="R-US_" device="0207/7" value="10k"/>
 <part name="P+6" library="dan" deviceset="+12V" device=""/>
 <part name="R29" library="dan" deviceset="R-US_" device="0207/7" value="10k"/>
-<part name="R30" library="dan" deviceset="R-US_" device="0207/7" value="1k"/>
-<part name="R31" library="dan" deviceset="R-US_" device="0207/7" value="1k"/>
+<part name="R30" library="dan" deviceset="R-US_" device="0207/7" value="100k"/>
+<part name="R31" library="dan" deviceset="R-US_" device="0207/7" value="100k"/>
 <part name="GND27" library="dan" deviceset="GND" device=""/>
 <part name="GND28" library="dan" deviceset="GND" device=""/>
 <part name="C8" library="dan" deviceset="CPOL-US" device="E2.5-6" value="2.2u"/>
