@@ -13508,7 +13508,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <part name="GND26" library="dan" deviceset="GND" device=""/>
 <part name="R28" library="dan" deviceset="R-US_" device="0207/7" value="10k"/>
 <part name="P+6" library="dan" deviceset="+12V" device=""/>
-<part name="R29" library="dan" deviceset="R-US_" device="0207/7" value="10k"/>
+<part name="R29" library="dan" deviceset="R-US_" device="0207/7" value="1k"/>
 <part name="R30" library="dan" deviceset="R-US_" device="0207/7" value="100k"/>
 <part name="R31" library="dan" deviceset="R-US_" device="0207/7" value="100k"/>
 <part name="GND27" library="dan" deviceset="GND" device=""/>

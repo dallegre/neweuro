@@ -964,7 +964,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="37.465" y="162.433" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="37.211" y="161.2138" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R29" library="dan" package="0207/7" value="10k" x="22.86" y="167.005" smashed="yes" rot="R90">
+<element name="R29" library="dan" package="0207/7" value="1k" x="22.86" y="167.005" smashed="yes" rot="R90">
 <attribute name="NAME" x="21.59" y="167.513" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="21.336" y="166.2938" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 </element>
