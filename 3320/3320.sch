@@ -11353,7 +11353,7 @@ high speed (Philips)</description>
 <part name="P+2" library="dan" deviceset="+12V" device=""/>
 <part name="P-2" library="dan" deviceset="-12V" device=""/>
 <part name="R10" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
-<part name="R11" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
+<part name="R11" library="dan" deviceset="R-US_" device="0207/2V" value="4.7k"/>
 <part name="R12" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
 <part name="C8" library="dan" deviceset="C-US" device="050-025X075" value="47n"/>
 <part name="GND5" library="dan" deviceset="GND" device=""/>
@@ -11401,8 +11401,8 @@ high speed (Philips)</description>
 <part name="C12" library="dan" deviceset="C-US" device="050-025X075" value="1u"/>
 <part name="IN2" library="dan" deviceset="PJ301BM" device=""/>
 <part name="GND4" library="dan" deviceset="GND" device=""/>
-<part name="R7" library="dan" deviceset="R-US_" device="0204/7" value="100k"/>
-<part name="R8" library="dan" deviceset="R-US_" device="0204/7" value="100k"/>
+<part name="R7" library="dan" deviceset="R-US_" device="0204/7" value="1M"/>
+<part name="R8" library="dan" deviceset="R-US_" device="0204/7" value="1M"/>
 <part name="GND20" library="dan" deviceset="GND" device=""/>
 <part name="GND21" library="dan" deviceset="GND" device=""/>
 <part name="IC2" library="dan" deviceset="OPA2134" device="P"/>
@@ -11434,7 +11434,7 @@ high speed (Philips)</description>
 <part name="R25" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
 <part name="R26" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
 <part name="R27" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
-<part name="C14" library="dan" deviceset="CPOL-US" device="E2.5-6" value="10n"/>
+<part name="C14" library="dan" deviceset="CPOL-US" device="E2.5-6" value="220n"/>
 <part name="C15" library="dan" deviceset="CPOL-US" device="E2.5-6" value="2.2u"/>
 <part name="C16" library="dan" deviceset="CPOL-US" device="E2.5-6" value="2.2u"/>
 <part name="D1" library="dan" deviceset="1N4148" device="DO35-7"/>
