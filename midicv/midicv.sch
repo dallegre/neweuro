@@ -12980,22 +12980,13 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="144.78" y1="175.26" x2="154.94" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="SV1" gate="1" pin="2"/>
-<wire x1="175.26" y1="177.8" x2="185.42" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="177.8" x2="185.42" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="195.58" y1="165.1" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="165.1" x2="182.88" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="3"/>
-<wire x1="182.88" y1="175.26" x2="175.26" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="2"/>
+<wire x1="175.26" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="177.8" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -13023,6 +13014,15 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="81.28" y1="60.96" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="16/A2/T"/>
 <wire x1="81.28" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="SV1" gate="1" pin="3"/>
+<wire x1="185.42" y1="175.26" x2="175.26" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="175.26" x2="185.42" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
