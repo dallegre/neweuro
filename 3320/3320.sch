@@ -11352,9 +11352,9 @@ high speed (Philips)</description>
 <part name="IC1" library="dan" deviceset="OPA2134" device="P"/>
 <part name="P+2" library="dan" deviceset="+12V" device=""/>
 <part name="P-2" library="dan" deviceset="-12V" device=""/>
-<part name="R10" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
-<part name="R11" library="dan" deviceset="R-US_" device="0207/2V" value="4.7k"/>
-<part name="R12" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
+<part name="R10" library="dan" deviceset="R-US_" device="0207/2V" value="100k"/>
+<part name="R11" library="dan" deviceset="R-US_" device="0207/2V" value="33k"/>
+<part name="R12" library="dan" deviceset="R-US_" device="0207/2V" value="100k"/>
 <part name="C8" library="dan" deviceset="C-US" device="050-025X075" value="47n"/>
 <part name="GND5" library="dan" deviceset="GND" device=""/>
 <part name="FC" library="dan" deviceset="US-EVU" device="F2J"/>

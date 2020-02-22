@@ -11691,8 +11691,8 @@ Source: 3M</description>
 <part name="C6" library="dan" deviceset="CPOL-US" device="E2.5-6" value="4.7u"/>
 <part name="JP1" library="dan" deviceset="PINHD-1X6" device=""/>
 <part name="JP2" library="dan" deviceset="PINHD-1X6" device=""/>
-<part name="R30" library="dan" deviceset="R-US_" device="0207/2V" value="100k"/>
-<part name="R31" library="dan" deviceset="R-US_" device="0207/2V" value="100k"/>
+<part name="R30" library="dan" deviceset="R-US_" device="0207/2V" value="220k"/>
+<part name="R31" library="dan" deviceset="R-US_" device="0207/2V" value="220k"/>
 <part name="GND33" library="dan" deviceset="GND" device=""/>
 <part name="R20" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
 <part name="R36" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
