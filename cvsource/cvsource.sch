@@ -202,7 +202,12 @@
 <connect gate="1" pin="S1" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="OMRON COMPONENTS USA" constant="no"/>
+<attribute name="MPN" value="B3F-4000" constant="no"/>
+<attribute name="OC_FARNELL" value="176434" constant="no"/>
+<attribute name="OC_NEWARK" value="36K3105" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13536,6 +13541,57 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="synthdiy">
+<description>&lt;b&gt;Synthesizer Devices&lt;/b&gt;&lt;p&gt;
+ ICs and misc electronic music parts.&lt;p&gt;
+ &lt;author&gt;Created by Jay J Schwichtenberg&lt;/author&gt;</description>
+<packages>
+<package name="2,0/0,9-R">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="-0.508" y1="0.762" x2="-0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.508" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-0.762" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.508" x2="0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9144" diameter="2"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2,0/0,9-R" prefix="PAD" uservalue="yes">
+<description>&lt;b&gt;ROUND THROUGH-HOLE PAD&lt;/b&gt; 2.0 mm, 0.9 mm/0.079",0.035"</description>
+<gates>
+<gate name="P" symbol="PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2,0/0,9-R">
+<connects>
+<connect gate="P" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="UBBS-4R-D14-4D">
 <packages>
 <package name="JST_UBBS-4R-D14-4D">
@@ -13552,21 +13608,18 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="6" y1="-1.67" x2="6" y2="-5.41" width="0.127" layer="21"/>
 <wire x1="6" y1="-5.41" x2="5.76" y2="-5.41" width="0.127" layer="21"/>
 <wire x1="2.23" y1="-5.41" x2="-2.23" y2="-5.41" width="0.127" layer="21"/>
-<wire x1="-6.25" y1="-6.9" x2="-6.25" y2="6.9" width="0.05" layer="39"/>
-<wire x1="-6.25" y1="6.9" x2="7.6" y2="6.9" width="0.05" layer="39"/>
+<wire x1="-7.774" y1="-6.9" x2="-7.774" y2="6.9" width="0.05" layer="39"/>
+<wire x1="-7.774" y1="6.9" x2="7.6" y2="6.9" width="0.05" layer="39"/>
 <wire x1="7.6" y1="6.9" x2="7.6" y2="-6.9" width="0.05" layer="39"/>
-<wire x1="7.6" y1="-6.9" x2="-6.25" y2="-6.9" width="0.05" layer="39"/>
+<wire x1="7.6" y1="-6.9" x2="-7.774" y2="-6.9" width="0.05" layer="39"/>
 <text x="-6.211809375" y="7.814859375" size="1.781390625" layer="25">&gt;NAME</text>
 <text x="-6.10818125" y="-9.012059375" size="1.78038125" layer="27">&gt;VALUE</text>
-<pad name="SH1" x="-4" y="5.15" drill="2"/>
-<pad name="SH2" x="-4" y="-5.15" drill="2"/>
-<pad name="SH3" x="4" y="-5.15" drill="2"/>
-<pad name="SH4" x="4" y="5.15" drill="2"/>
-<pad name="SH5" x="5.85" y="0" drill="2"/>
-<pad name="2" x="-1.25" y="1" drill="0.92"/>
-<pad name="3" x="-1.25" y="-1" drill="0.92"/>
-<pad name="4" x="1.25" y="-1" drill="0.92"/>
-<pad name="1" x="1.25" y="1" drill="0.92" shape="square"/>
+<pad name="SH5" x="5.85" y="-0.758" drill="2"/>
+<pad name="D-" x="-1.25" y="1.5" drill="0.92"/>
+<pad name="D+" x="-1.25" y="-1.5" drill="0.92"/>
+<pad name="GND" x="1.25" y="-1.5" drill="0.92"/>
+<pad name="VCC" x="1.25" y="1.5" drill="0.92" shape="square"/>
+<pad name="SH1" x="-5.834" y="-0.758" drill="2"/>
 </package>
 </packages>
 <symbols>
@@ -13577,11 +13630,12 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<pin name="1" x="-10.16" y="5.08" length="middle" direction="pas"/>
-<pin name="2" x="-10.16" y="2.54" length="middle" direction="pas"/>
-<pin name="3" x="-10.16" y="0" length="middle" direction="pas"/>
-<pin name="JST" x="-10.16" y="-2.54" length="middle" direction="pas"/>
+<pin name="VCC" x="-10.16" y="5.08" length="middle" direction="pas"/>
+<pin name="D-" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="D+" x="-10.16" y="0" length="middle" direction="pas"/>
+<pin name="GND" x="-10.16" y="-2.54" length="middle" direction="pas"/>
 <pin name="SHIELD" x="-10.16" y="-7.62" length="middle" direction="pas"/>
+<pin name="SHIELD1" x="-10.16" y="-5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13593,11 +13647,12 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <devices>
 <device name="" package="JST_UBBS-4R-D14-4D">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="JST" pad="4"/>
-<connect gate="G$1" pin="SHIELD" pad="SH1 SH2 SH3 SH4 SH5"/>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SH1"/>
+<connect gate="G$1" pin="SHIELD1" pad="SH5"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name="">
@@ -13770,10 +13825,13 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <part name="JP5" library="dan" deviceset="PINHD-2X6" device=""/>
 <part name="JP6" library="dan" deviceset="PINHD-2X6" device=""/>
 <part name="CVOUT6" library="dan" deviceset="PJ301BM" device=""/>
-<part name="J1" library="UBBS-4R-D14-4D" deviceset="UBBS-4R-D14-4D" device=""/>
 <part name="CVOUT7" library="dan" deviceset="PJ301BM" device=""/>
 <part name="GND40" library="dan" deviceset="GND" device=""/>
 <part name="R38" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
+<part name="D-" library="synthdiy" deviceset="2,0/0,9-R" device=""/>
+<part name="D+" library="synthdiy" deviceset="2,0/0,9-R" device=""/>
+<part name="J1" library="UBBS-4R-D14-4D" deviceset="UBBS-4R-D14-4D" device=""/>
+<part name="GND41" library="dan" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13946,10 +14004,13 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <instance part="JP5" gate="A" x="111.76" y="144.78"/>
 <instance part="JP6" gate="A" x="111.76" y="119.38"/>
 <instance part="CVOUT6" gate="G$1" x="142.24" y="40.64" rot="MR0"/>
-<instance part="J1" gate="G$1" x="129.54" y="88.9"/>
 <instance part="CVOUT7" gate="G$1" x="91.44" y="-10.16" rot="MR0"/>
 <instance part="GND40" gate="1" x="76.2" y="-7.62"/>
 <instance part="R38" gate="G$1" x="63.5" y="-15.24" rot="R180"/>
+<instance part="D-" gate="P" x="81.28" y="93.98"/>
+<instance part="D+" gate="P" x="76.2" y="91.44"/>
+<instance part="J1" gate="G$1" x="119.38" y="91.44"/>
+<instance part="GND41" gate="1" x="101.6" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -14326,16 +14387,6 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <junction x="78.74" y="-2.54"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="-5.08" y1="124.46" x2="-17.78" y2="124.46" width="0.1524" layer="91"/>
-<label x="-17.78" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="2.54" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
-<label x="10.16" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="3"/>
 <wire x1="-5.08" y1="121.92" x2="-17.78" y2="121.92" width="0.1524" layer="91"/>
 <label x="-17.78" y="121.92" size="1.778" layer="95"/>
@@ -14349,16 +14400,6 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="-5.08" y1="119.38" x2="-17.78" y2="119.38" width="0.1524" layer="91"/>
 <label x="-17.78" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="1"/>
-<wire x1="-5.08" y1="149.86" x2="-17.78" y2="149.86" width="0.1524" layer="91"/>
-<label x="-17.78" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="2.54" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
-<label x="10.16" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
@@ -14389,6 +14430,21 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="-195.58" y1="-93.98" x2="-195.58" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="101.6" y1="86.36" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<wire x1="109.22" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="83.82" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="106.68" y1="86.36" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SHIELD1"/>
+<wire x1="109.22" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<junction x="106.68" y="86.36"/>
+<wire x1="101.6" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<junction x="106.68" y="88.9"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15581,6 +15637,54 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="-203.2" y1="-63.5" x2="-190.5" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="D" pin="+IN"/>
 <label x="-203.2" y="-104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D-A" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="-5.08" y1="124.46" x2="-17.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="-17.78" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D-" gate="P" pin="P"/>
+<wire x1="83.82" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<label x="86.36" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D+A" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="2.54" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="10.16" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D+" gate="P" pin="P"/>
+<wire x1="78.74" y1="91.44" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
+<label x="86.36" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D+B" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="2.54" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<label x="10.16" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="D+"/>
+<wire x1="109.22" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
+<label x="99.06" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D-B" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="-5.08" y1="149.86" x2="-17.78" y2="149.86" width="0.1524" layer="91"/>
+<label x="-17.78" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="D-"/>
+<wire x1="109.22" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<label x="99.06" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
