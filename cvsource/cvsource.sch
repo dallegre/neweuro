@@ -13830,8 +13830,11 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <part name="R38" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
 <part name="D-" library="synthdiy" deviceset="2,0/0,9-R" device=""/>
 <part name="D+" library="synthdiy" deviceset="2,0/0,9-R" device=""/>
-<part name="J1" library="UBBS-4R-D14-4D" deviceset="UBBS-4R-D14-4D" device=""/>
+<part name="USB" library="UBBS-4R-D14-4D" deviceset="UBBS-4R-D14-4D" device=""/>
 <part name="GND41" library="dan" deviceset="GND" device=""/>
+<part name="GATE" library="dan" deviceset="LED" device="5MM"/>
+<part name="R39" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
+<part name="GND42" library="dan" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14009,8 +14012,11 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <instance part="R38" gate="G$1" x="63.5" y="-15.24" rot="R180"/>
 <instance part="D-" gate="P" x="81.28" y="93.98"/>
 <instance part="D+" gate="P" x="76.2" y="91.44"/>
-<instance part="J1" gate="G$1" x="119.38" y="91.44"/>
+<instance part="USB" gate="G$1" x="119.38" y="91.44"/>
 <instance part="GND41" gate="1" x="101.6" y="83.82"/>
+<instance part="GATE" gate="G$1" x="177.8" y="10.16"/>
+<instance part="R39" gate="G$1" x="177.8" y="-2.54" rot="R90"/>
+<instance part="GND42" gate="1" x="177.8" y="-12.7"/>
 </instances>
 <busses>
 </busses>
@@ -14434,17 +14440,22 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
 <wire x1="101.6" y1="86.36" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<pinref part="USB" gate="G$1" pin="SHIELD"/>
 <wire x1="109.22" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="83.82" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="USB" gate="G$1" pin="GND"/>
 <wire x1="106.68" y1="86.36" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="SHIELD1"/>
+<pinref part="USB" gate="G$1" pin="SHIELD1"/>
 <wire x1="109.22" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 <junction x="106.68" y="86.36"/>
 <wire x1="101.6" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
 <junction x="106.68" y="88.9"/>
+</segment>
+<segment>
+<pinref part="R39" gate="G$1" pin="1"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="177.8" y1="-10.16" x2="177.8" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15540,8 +15551,12 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <net name="GATEB" class="0">
 <segment>
 <pinref part="CVOUT5" gate="G$1" pin="P$3"/>
-<wire x1="175.26" y1="17.78" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="17.78" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 <label x="165.1" y="17.78" size="1.778" layer="95"/>
+<pinref part="GATE" gate="G$1" pin="A"/>
+<wire x1="172.72" y1="17.78" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="12.7" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="12.7" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="1"/>
@@ -15670,7 +15685,7 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <label x="10.16" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="D+"/>
+<pinref part="USB" gate="G$1" pin="D+"/>
 <wire x1="109.22" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
 <label x="99.06" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -15682,9 +15697,16 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <label x="-17.78" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="D-"/>
+<pinref part="USB" gate="G$1" pin="D-"/>
 <wire x1="109.22" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <label x="99.06" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="GATE" gate="G$1" pin="C"/>
+<wire x1="177.8" y1="2.54" x2="177.8" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
