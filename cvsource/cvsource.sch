@@ -13835,6 +13835,9 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <part name="GATE" library="dan" deviceset="LED" device="5MM"/>
 <part name="R39" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
 <part name="GND42" library="dan" deviceset="GND" device=""/>
+<part name="R40" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
+<part name="GND43" library="dan" deviceset="GND" device=""/>
+<part name="GND44" library="dan" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13955,8 +13958,8 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <instance part="IC3" gate="A1" x="25.4" y="-53.34"/>
 <instance part="P+3" gate="1" x="10.16" y="-48.26"/>
 <instance part="C11" gate="G$1" x="10.16" y="-58.42"/>
-<instance part="C12" gate="G$1" x="40.64" y="-58.42"/>
-<instance part="GND34" gate="1" x="27.94" y="-71.12"/>
+<instance part="C12" gate="G$1" x="-50.8" y="-48.26"/>
+<instance part="GND34" gate="1" x="25.4" y="-71.12"/>
 <instance part="P+4" gate="1" x="-7.62" y="-45.72"/>
 <instance part="P-3" gate="1" x="-7.62" y="-81.28"/>
 <instance part="C13" gate="G$1" x="-7.62" y="-55.88"/>
@@ -14017,6 +14020,9 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <instance part="GATE" gate="G$1" x="177.8" y="10.16"/>
 <instance part="R39" gate="G$1" x="177.8" y="-2.54" rot="R90"/>
 <instance part="GND42" gate="1" x="177.8" y="-12.7"/>
+<instance part="R40" gate="G$1" x="55.88" y="-22.86" rot="R270"/>
+<instance part="GND43" gate="1" x="55.88" y="-33.02"/>
+<instance part="GND44" gate="1" x="-50.8" y="-58.42"/>
 </instances>
 <busses>
 </busses>
@@ -14219,21 +14225,17 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="129.54" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="60.96" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <junction x="129.54" y="48.26"/>
+<junction x="129.54" y="60.96"/>
 </segment>
 <segment>
 <pinref part="GND34" gate="1" pin="GND"/>
-<wire x1="27.94" y1="-68.58" x2="27.94" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-68.58" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="-63.5" x2="10.16" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="-66.04" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-66.04" x2="27.94" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-66.04" x2="40.64" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-66.04" x2="40.64" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A1" pin="GND"/>
 <wire x1="25.4" y1="-60.96" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="25.4" y="-66.04"/>
-<junction x="27.94" y="-66.04"/>
 </segment>
 <segment>
 <wire x1="-58.42" y1="-22.86" x2="-50.8" y2="-22.86" width="0.1524" layer="91"/>
@@ -14457,6 +14459,16 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="177.8" y1="-10.16" x2="177.8" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+<wire x1="55.88" y1="-30.48" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND44" gate="1" pin="GND"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="-50.8" y1="-55.88" x2="-50.8" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -14564,18 +14576,23 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <label x="-187.96" y="-96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="-55.88" x2="40.64" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A1" pin="VO"/>
-<wire x1="40.64" y1="-53.34" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-53.34" x2="45.72" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="40.64" y="-53.34"/>
-<label x="43.18" y="-53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="A" pin="11"/>
 <wire x1="53.34" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
 <label x="35.56" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-11" pin="KL"/>
+<wire x1="-58.42" y1="-43.18" x2="-55.88" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-43.18" x2="-55.88" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-12" pin="KL"/>
+<wire x1="-55.88" y1="-45.72" x2="-58.42" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-43.18" x2="-50.8" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="-55.88" y="-43.18"/>
+<label x="-53.34" y="-43.18" size="1.778" layer="95"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="-50.8" y1="-43.18" x2="-48.26" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-45.72" x2="-50.8" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="-50.8" y="-43.18"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -14696,6 +14713,7 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <junction x="-119.38" y="93.98"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-129.54" y1="91.44" x2="-129.54" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-129.54" y="93.98"/>
 </segment>
 </net>
 <net name="CV1A" class="0">
@@ -15557,6 +15575,7 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <wire x1="172.72" y1="17.78" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="12.7" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="12.7" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
+<junction x="172.72" y="17.78"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="1"/>
@@ -15603,16 +15622,20 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 </segment>
 <segment>
 <pinref part="R38" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="-15.24" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
-<label x="48.26" y="-15.24" size="1.778" layer="95"/>
+<wire x1="58.42" y1="-15.24" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
+<label x="43.18" y="-15.24" size="1.778" layer="95"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="-15.24" x2="43.18" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-17.78" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="55.88" y="-15.24"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R38" gate="G$1" pin="1"/>
 <pinref part="CVOUT7" gate="G$1" pin="P$3"/>
-<wire x1="68.58" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
 <label x="73.66" y="-15.24" size="1.778" layer="95"/>
+<wire x1="68.58" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CV2" class="0">
@@ -15712,6 +15735,43 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,-58.42,-43.18,X1-11,KL,,,,"/>
+<approved hash="101,1,-58.42,-45.72,X1-12,KL,,,,"/>
+<approved hash="101,1,-58.42,-48.26,X1-13,KL,,,,"/>
+<approved hash="101,1,-58.42,-50.8,X1-14,KL,,,,"/>
+<approved hash="101,1,-58.42,-53.34,X1-15,KL,,,,"/>
+<approved hash="101,1,-58.42,-55.88,X1-16,KL,,,,"/>
+<approved hash="104,1,78.74,78.74,U$1,VIN,5V,,,"/>
+<approved hash="104,1,-119.38,116.84,IC1A,V+,+12V,,,"/>
+<approved hash="104,1,-119.38,101.6,IC1A,V-,-12V,,,"/>
+<approved hash="104,1,96.52,58.42,IC2P,V+,+12V,,,"/>
+<approved hash="104,1,96.52,43.18,IC2P,V-,-12V,,,"/>
+<approved hash="113,1,-75.8105,96.52,MODE,,,,,"/>
+<approved hash="113,1,-48.5817,85.09,MODE1,,,,,"/>
+<approved hash="113,1,-1.31233,144.911,JP1,,,,,"/>
+<approved hash="113,1,-56.2017,85.09,MODE2,,,,,"/>
+<approved hash="113,1,-63.8217,85.09,MODE3,,,,,"/>
+<approved hash="113,1,-93.6583,102.87,CV1,,,,,"/>
+<approved hash="113,1,-159.698,77.47,CV2,,,,,"/>
+<approved hash="113,1,-116.518,52.07,OP1,,,,,"/>
+<approved hash="113,1,-106.291,50.8,OP,,,,,"/>
+<approved hash="113,1,-159.698,8.89,CV3,,,,,"/>
+<approved hash="113,1,-159.698,-72.39,CV4,,,,,"/>
+<approved hash="113,1,-88.5783,41.91,OP2,,,,,"/>
+<approved hash="113,1,-80.9583,39.37,OP3,,,,,"/>
+<approved hash="113,1,-58.0983,31.75,OP4,,,,,"/>
+<approved hash="113,1,-47.8705,27.94,SAVE,,,,,"/>
+<approved hash="113,1,-9.77053,20.32,LOAD,,,,,"/>
+<approved hash="113,1,-1.31233,119.511,JP2,,,,,"/>
+<approved hash="113,1,57.1077,144.911,JP3,,,,,"/>
+<approved hash="113,1,57.1077,119.511,JP4,,,,,"/>
+<approved hash="113,1,112.988,144.911,JP5,,,,,"/>
+<approved hash="113,1,112.988,119.511,JP6,,,,,"/>
+<approved hash="113,1,83.5406,95.1526,D-,,,,,"/>
+<approved hash="113,1,78.4606,92.6126,D+,,,,,"/>
+<approved hash="113,1,178.122,8.89,GATE,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
