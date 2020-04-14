@@ -13579,8 +13579,8 @@ high speed (Philips)</description>
 <part name="P+3" library="dan" deviceset="+12V" device=""/>
 <part name="R12" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
 <part name="R13" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
-<part name="R14" library="dan" deviceset="R-US_" device="0207/2V" value="47k"/>
-<part name="R15" library="dan" deviceset="R-US_" device="0207/2V" value="47k"/>
+<part name="R14" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
+<part name="R15" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
 <part name="GND5" library="dan" deviceset="GND" device=""/>
 <part name="R16" library="dan" deviceset="R-US_" device="0207/2V" value="10k"/>
 <part name="Q" library="dan" deviceset="US-EVU" device="F2J" value="10K"/>
@@ -13602,10 +13602,10 @@ high speed (Philips)</description>
 <part name="GND11" library="dan" deviceset="GND" device=""/>
 <part name="MIN" library="dan" deviceset="PJ301BM" device=""/>
 <part name="GND13" library="dan" deviceset="GND" device=""/>
-<part name="R29" library="dan" deviceset="R-US_" device="0207/2V" value="47k"/>
+<part name="R29" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
 <part name="R30" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
 <part name="R31" library="dan" deviceset="R-US_" device="0207/2V" value="1k"/>
-<part name="R17" library="dan" deviceset="R-US_" device="0207/2V" value="47k"/>
+<part name="R17" library="dan" deviceset="R-US_" device="0207/2V" value="240k"/>
 <part name="GND15" library="dan" deviceset="GND" device=""/>
 <part name="POWER" library="dan" deviceset="2516-" device=""/>
 <part name="P+8" library="dan" deviceset="+12V" device=""/>
@@ -13693,7 +13693,7 @@ high speed (Philips)</description>
 <part name="Q11" library="dan" deviceset="2N3904" device=""/>
 <part name="Q12" library="dan" deviceset="2N3904" device=""/>
 <part name="SCALE" library="dan" deviceset="TRIM_US-" device="S64W" value="500K"/>
-<part name="R26" library="dan" deviceset="R-US_" device="0207/2V" value="22k"/>
+<part name="R26" library="dan" deviceset="R-US_" device="0207/2V" value="110k"/>
 <part name="C9" library="dan" deviceset="CPOL-US" device="E2.5-6" value="4.7u"/>
 <part name="C10" library="dan" deviceset="CPOL-US" device="E2.5-6" value="4.7u"/>
 <part name="IC3" library="dan" deviceset="OPA134" device="P"/>
