@@ -15411,18 +15411,17 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <net name="CV4B" class="0">
 <segment>
 <pinref part="CVOUT4" gate="G$1" pin="P$3"/>
-<label x="-160.02" y="-68.58" size="1.778" layer="95"/>
-<wire x1="-157.48" y1="-66.04" x2="-160.02" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-66.04" x2="-160.02" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-71.12" x2="-142.24" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-162.56" y="-68.58" size="1.778" layer="95"/>
+<wire x1="-157.48" y1="-66.04" x2="-162.56" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-66.04" x2="-162.56" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-71.12" x2="-142.24" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-71.12" x2="-142.24" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="AG"/>
 <wire x1="-142.24" y1="-76.2" x2="-144.78" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="AR"/>
 <wire x1="-160.02" y1="-76.2" x2="-162.56" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="-76.2" x2="-162.56" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="-71.12" x2="-160.02" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="-160.02" y="-71.12"/>
+<junction x="-162.56" y="-71.12"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="7"/>
