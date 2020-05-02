@@ -13947,6 +13947,11 @@ Source: http://focus.ti.com/lit/ds/sbos058/sbos058.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="63.5" y="-50.8" size="1.778" layer="91">Prefab notes:</text>
+<text x="63.5" y="-55.88" size="1.778" layer="91">LED resistors should be 1K</text>
+<text x="63.5" y="-58.42" size="1.778" layer="91">film cap smaller footprint</text>
+<text x="63.5" y="-60.96" size="1.778" layer="91">knobs are upside down</text>
+<text x="63.5" y="-63.5" size="1.778" layer="91">bicolor led footprints</text>
 </plain>
 <instances>
 <instance part="MODE" gate="1" x="-73.66" y="96.52"/>
