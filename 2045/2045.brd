@@ -122,7 +122,7 @@
 <hole x="56.515" y="107.95" drill="0.9"/>
 <text x="10.16" y="130.175" size="1.778" layer="21" font="vector" ratio="15">4POUT</text>
 <text x="40.64" y="130.175" size="1.778" layer="21" font="vector" ratio="15">2POUT</text>
-<text x="26.67" y="146.685" size="1.778" layer="21" font="vector" ratio="15">CVIN</text>
+<text x="26.67" y="147.32" size="1.778" layer="21" font="vector" ratio="15">CVIN</text>
 <text x="12.065" y="147.32" size="1.778" layer="21" font="vector" ratio="15">IN1</text>
 <text x="41.91" y="147.32" size="1.778" layer="21" font="vector" ratio="15">IN2</text>
 <text x="23.495" y="211.455" size="1.778" layer="21" font="vector" ratio="15">ssm2045</text>
@@ -707,11 +707,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="27.48" y="191.285" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="IC1" library="dan" package="DIL08" value="OPA2134P" x="32.385" y="66.675" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.464" y="73.914" size="1.27" layer="21" font="vector" ratio="15"/>
 <attribute name="VALUE" x="29.464" y="72.39" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="IC2" library="dan" package="DIL08" value="OPA2134P" x="32.385" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.464" y="25.019" size="1.27" layer="21" font="vector" ratio="15"/>
 <attribute name="VALUE" x="29.464" y="23.495" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="IN" library="dan" package="PJ301BM" value="PJ301BM" x="13.97" y="139.7" smashed="yes"/>
@@ -844,7 +842,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="52.324" y="117.475" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="U$1" library="dan" package="DIL18" value="SSM2045" x="32.385" y="43.815" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.337" y="57.404" size="1.27" layer="21" font="vector" ratio="15"/>
 <attribute name="VALUE" x="29.21" y="55.88" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="4POUTPUT" library="dan" package="PJ301BM" value="PJ301BM" x="13.97" y="122.555" smashed="yes"/>
